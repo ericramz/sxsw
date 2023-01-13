@@ -8,17 +8,20 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <StaticImage
-        src="../images/gatsby-astronaut.png"
-        alt="gatsby astronaut"
-      />
+    <div className="block md:hidden">
+      <div className="">
+        <StaticImage src="../images/discover-texas.png" alt="UT SXSW" />
+      </div>
     </div>
-    <p><Link to="/page-2/">Go to page 2</Link></p>
-    <p><Link to="/using-typescript/">Go to "Using TypeScript"</Link></p>
+    <div className="spline hidden md:block">
+      <iframe
+        class="responsive-iframe"
+        title="Intro"
+        width="1920"
+        height="1080"
+        src="https://my.spline.design/untitled-6709c686713d68944592ef2b3e953908/"
+      ></iframe>
+    </div>
   </Layout>
 )
 
